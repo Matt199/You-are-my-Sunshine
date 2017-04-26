@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C949E8651EB15633001303DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C949E8641EB15633001303DA /* AppDelegate.swift */; };
+		C949E8671EB15633001303DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C949E8661EB15633001303DA /* ViewController.swift */; };
+		C949E86A1EB15634001303DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C949E8681EB15634001303DA /* Main.storyboard */; };
+		C949E86D1EB15635001303DA /* Space_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C949E86B1EB15635001303DA /* Space_App.xcdatamodeld */; };
+		C949E86F1EB15635001303DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C949E86E1EB15635001303DA /* Assets.xcassets */; };
+		C949E8721EB15636001303DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C949E8701EB15636001303DA /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C949E8611EB15632001303DA /* Space App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C949E8641EB15633001303DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C949E8661EB15633001303DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C949E8691EB15634001303DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C949E86C1EB15635001303DA /* Space_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Space_App.xcdatamodel; sourceTree = "<group>"; };
+		C949E86E1EB15635001303DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C949E8711EB15636001303DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C949E8731EB15636001303DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C949E85E1EB15632001303DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C949E8581EB15630001303DA = {
+			isa = PBXGroup;
+			children = (
+				C949E8631EB15632001303DA /* Space App */,
+				C949E8621EB15632001303DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C949E8621EB15632001303DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C949E8611EB15632001303DA /* Space App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C949E8631EB15632001303DA /* Space App */ = {
+			isa = PBXGroup;
+			children = (
+				C949E8641EB15633001303DA /* AppDelegate.swift */,
+				C949E8661EB15633001303DA /* ViewController.swift */,
+				C949E8681EB15634001303DA /* Main.storyboard */,
+				C949E86E1EB15635001303DA /* Assets.xcassets */,
+				C949E8701EB15636001303DA /* LaunchScreen.storyboard */,
+				C949E8731EB15636001303DA /* Info.plist */,
+				C949E86B1EB15635001303DA /* Space_App.xcdatamodeld */,
+			);
+			path = "Space App";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C949E8601EB15632001303DA /* Space App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C949E8761EB15636001303DA /* Build configuration list for PBXNativeTarget "Space App" */;
+			buildPhases = (
+				C949E85D1EB15632001303DA /* Sources */,
+				C949E85E1EB15632001303DA /* Frameworks */,
+				C949E85F1EB15632001303DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Space App";
+			productName = "Space App";
+			productReference = C949E8611EB15632001303DA /* Space App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C949E8591EB15631001303DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Mateusz Kopacz";
+				TargetAttributes = {
+					C949E8601EB15632001303DA = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = L5AGVM93E5;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C949E85C1EB15632001303DA /* Build configuration list for PBXProject "Space App" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C949E8581EB15630001303DA;
+			productRefGroup = C949E8621EB15632001303DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C949E8601EB15632001303DA /* Space App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C949E85F1EB15632001303DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C949E8721EB15636001303DA /* LaunchScreen.storyboard in Resources */,
+				C949E86F1EB15635001303DA /* Assets.xcassets in Resources */,
+				C949E86A1EB15634001303DA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C949E85D1EB15632001303DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C949E8671EB15633001303DA /* ViewController.swift in Sources */,
+				C949E86D1EB15635001303DA /* Space_App.xcdatamodeld in Sources */,
+				C949E8651EB15633001303DA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C949E8681EB15634001303DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C949E8691EB15634001303DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C949E8701EB15636001303DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C949E8711EB15636001303DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C949E8741EB15636001303DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C949E8751EB15636001303DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C949E8771EB15636001303DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L5AGVM93E5;
+				INFOPLIST_FILE = "Space App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Mapps.Space-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C949E8781EB15636001303DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L5AGVM93E5;
+				INFOPLIST_FILE = "Space App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Mapps.Space-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C949E85C1EB15632001303DA /* Build configuration list for PBXProject "Space App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C949E8741EB15636001303DA /* Debug */,
+				C949E8751EB15636001303DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C949E8761EB15636001303DA /* Build configuration list for PBXNativeTarget "Space App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C949E8771EB15636001303DA /* Debug */,
+				C949E8781EB15636001303DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C949E86B1EB15635001303DA /* Space_App.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C949E86C1EB15635001303DA /* Space_App.xcdatamodel */,
+			);
+			currentVersion = C949E86C1EB15635001303DA /* Space_App.xcdatamodel */;
+			path = Space_App.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C949E8591EB15631001303DA /* Project object */;
+}
