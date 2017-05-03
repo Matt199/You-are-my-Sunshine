@@ -16,7 +16,7 @@ class CalculateViewController: UIViewController, UIPickerViewDelegate, UIPickerV
     
     var currentValue = 0
     var panelAreaStr = ""
-    var panelArea = 0
+    var panelArea = ""
     var pAera = 0
     var calcValue = 0
     var annualValue = 0
@@ -42,12 +42,25 @@ class CalculateViewController: UIViewController, UIPickerViewDelegate, UIPickerV
     
     @IBAction func calculateButton(_ sender: Any) {
         
-
-            panelArea = Int(areaTextField.text!)!
+        
+        self.view.endEditing(true)
+        
+        
+        
+        if let panelArea = Int(areaTextField.text!) {
         
             calcValue = currentValue * panelArea * annualValue / 1000
             
+            showCalculatedAlert(calcValue: calcValue)
+            
+            
+            
             calculatedValue.text = "\(calcValue) kW"
+        } else {
+        
+            showErrorAlert()
+        
+        }
  
         
     }
@@ -100,6 +113,34 @@ class CalculateViewController: UIViewController, UIPickerViewDelegate, UIPickerV
         
     }
     
+    
+    
+    func showCalculatedAlert(calcValue: Int) {
+        
+        let alertController = UIAlertController(title: "Calculated", message: "\(calcValue) kW", preferredStyle: UIAlertControllerStyle.alert)
+        
+        let defaultAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil)
+        
+        
+        alertController.addAction(defaultAction)
+        present(alertController, animated: true, completion: nil)
+        
+        
+    }
+
+    func showErrorAlert() {
+        
+        let alertController = UIAlertController(title: "Error", message: "Wrong Value", preferredStyle: UIAlertControllerStyle.alert)
+        
+        let defaultAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil)
+        
+        
+        alertController.addAction(defaultAction)
+        present(alertController, animated: true, completion: nil)
+        
+        
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -120,9 +161,17 @@ class CalculateViewController: UIViewController, UIPickerViewDelegate, UIPickerV
         
         
         
+        
+        
 
         // Do any additional setup after loading the view.
     }
+    
+    
+    
+    
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

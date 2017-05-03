@@ -312,19 +312,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="BoN-JH-fXY">
-                                <rect key="frame" x="8" y="121" width="304" height="270"/>
+                                <rect key="frame" x="17" y="121" width="286.5" height="270"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="KwU-6e-dfN">
-                                        <rect key="frame" x="0.0" y="0.0" width="304" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="286.5" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Solar Panel Area " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuL-R8-byB">
-                                                <rect key="frame" x="0.0" y="0.0" width="149" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="131.5" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3A7-Qe-EWi">
-                                                <rect key="frame" x="181" y="0.0" width="70" height="30"/>
+                                                <rect key="frame" x="163.5" y="0.0" width="70" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="70" id="usl-Tv-SoX"/>
                                                 </constraints>
@@ -333,7 +333,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="m²" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXW-m8-NNv">
-                                                <rect key="frame" x="283" y="0.0" width="21" height="30"/>
+                                                <rect key="frame" x="265.5" y="0.0" width="21" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -341,16 +341,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="DjN-ag-C8T">
-                                        <rect key="frame" x="0.0" y="60" width="304" height="30"/>
+                                        <rect key="frame" x="0.0" y="60" width="286.5" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Panel efficiency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynv-SQ-SJK">
-                                                <rect key="frame" x="0.0" y="0.0" width="138.5" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="121" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="13" translatesAutoresizingMaskIntoConstraints="NO" id="jxY-Sr-0a6">
-                                                <rect key="frame" x="143.5" y="0.0" width="132" height="31"/>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="25" translatesAutoresizingMaskIntoConstraints="NO" id="jxY-Sr-0a6">
+                                                <rect key="frame" x="126" y="0.0" width="132" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="128" id="w1i-EX-YEa"/>
                                                 </constraints>
@@ -359,7 +359,7 @@
                                                 </connections>
                                             </slider>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktF-GF-gf4">
-                                                <rect key="frame" x="280.5" y="0.0" width="23.5" height="30"/>
+                                                <rect key="frame" x="263" y="0.0" width="23.5" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -367,19 +367,21 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MKL-RF-UZ9">
-                                        <rect key="frame" x="0.0" y="120" width="304" height="150"/>
+                                        <rect key="frame" x="0.0" y="120" width="286.5" height="150"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Annual radiation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E1K-yn-7ek">
-                                                <rect key="frame" x="0.0" y="65" width="124" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="65" width="156.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BfN-GI-0KH">
-                                                <rect key="frame" x="124" y="0.0" width="180" height="150"/>
+                                            <pickerView alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BfN-GI-0KH">
+                                                <rect key="frame" x="156.5" y="0.0" width="130" height="150"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="150" id="JcB-hL-57m"/>
-                                                    <constraint firstAttribute="width" constant="180" id="uWN-AE-eOh"/>
+                                                    <constraint firstAttribute="width" constant="130" id="uWN-AE-eOh"/>
                                                 </constraints>
                                                 <connections>
                                                     <outlet property="dataSource" destination="NwM-PX-krU" id="opk-h1-xWG"/>
