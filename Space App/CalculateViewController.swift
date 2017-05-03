@@ -146,15 +146,9 @@ class CalculateViewController: UIViewController, UIPickerViewDelegate, UIPickerV
         super.viewDidLoad()
         self.annualPicker.delegate = self
         self.annualPicker.dataSource = self
-        
-        
-        
-        
-        
-        
-        
-        
 
+        self.hideKeyboard()
+        
         // Do any additional setup after loading the view.
     }
     

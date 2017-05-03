@@ -45,6 +45,8 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.hideKeyboard()
+        
         // Do any additional setup after loading the view.
         // hide text fields 
         

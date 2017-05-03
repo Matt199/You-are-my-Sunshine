@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E5840F41EB9F14D0066925F /* kbController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5840F31EB9F14D0066925F /* kbController.swift */; };
 		0E8EAF561EB488BE004B37AD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8EAF551EB488BE004B37AD /* LoginViewController.swift */; };
 		0E8EAF581EB49623004B37AD /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8EAF571EB49623004B37AD /* CalculateViewController.swift */; };
 		0E8EAF5A1EB4D98B004B37AD /* JsonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8EAF591EB4D98B004B37AD /* JsonViewController.swift */; };
@@ -65,6 +66,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0E5840F31EB9F14D0066925F /* kbController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kbController.swift; sourceTree = "<group>"; };
 		0E8EAF551EB488BE004B37AD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0E8EAF571EB49623004B37AD /* CalculateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
 		0E8EAF591EB4D98B004B37AD /* JsonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				0E8EAF5B1EB4FC5A004B37AD /* InfoTabViewCellTableViewCell.swift */,
 				0EB8A2FD1EB580FC0056136E /* LiveDataController.swift */,
 				0EB8A3041EB5B94B0056136E /* RegistrationViewController.swift */,
+				0E5840F31EB9F14D0066925F /* kbController.swift */,
 				C949E8681EB15634001303DA /* Main.storyboard */,
 				C949E86E1EB15635001303DA /* Assets.xcassets */,
 				C949E8701EB15636001303DA /* LaunchScreen.storyboard */,
@@ -264,6 +267,7 @@
 				0E8EAF5A1EB4D98B004B37AD /* JsonViewController.swift in Sources */,
 				0EB8A3081EB5F9E40056136E /* MenuViewController.swift in Sources */,
 				0EB8A3051EB5B94B0056136E /* RegistrationViewController.swift in Sources */,
+				0E5840F41EB9F14D0066925F /* kbController.swift in Sources */,
 				C949E8651EB15633001303DA /* AppDelegate.swift in Sources */,
 				0E8EAF561EB488BE004B37AD /* LoginViewController.swift in Sources */,
 				C949E87D1EB16CF7001303DA /* MapViewController.swift in Sources */,
