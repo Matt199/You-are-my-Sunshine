@@ -161,9 +161,9 @@ class RegistrationViewController: UIViewController {
     
     @IBAction func bookButton(_ sender: Any) {
         
-        
-        showAlert()
         calcTotalCaron()
+        showAlert()
+       
         
         
     }

@@ -35,11 +35,12 @@ class LoginViewController: UIViewController {
 
     }
     
+    @IBOutlet weak var loginStack: UIStackView!
     
    
     @IBOutlet weak var backroundI: UIImageView!
     
-        
+    
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,36 +61,41 @@ class LoginViewController: UIViewController {
         
         self.view.backgroundColor = UIColor(patternImage: image)
         
-        userName.center.x -= view.bounds.width
-        password.center.x -= view.bounds.width
+        //loginStack.center.x -= view.bounds.width
+       
+        //userName.center.x -= view.bounds.width
+        //password.center.x -= view.bounds.width
     
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        userName.center.x -= view.bounds.width
-        password.center.x -= view.bounds.width
+        
+        //loginStack.center.x -= view.bounds.width
+        
+        //userName.center.x -= view.bounds.width
+        //password.center.x -= view.bounds.width
     }
     
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        UIView.animate(withDuration: 0.9, delay: 0.2, usingSpringWithDamping: 0.3, initialSpringVelocity: 0.5, options: UIViewAnimationOptions.curveEaseOut, animations: {
-            
-            self.userName.center.x += self.view.bounds.width
-            
-        }, completion: nil)
-        
-        
-        
-        UIView.animate(withDuration: 0.9, delay: 0.2, usingSpringWithDamping: 0.3, initialSpringVelocity: 0.5, options: UIViewAnimationOptions.curveEaseOut, animations: {
-            
-            self.password.center.x += self.view.bounds.width
-            
-        }, completion: nil)
-        
-        
-    }
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//        
+//        UIView.animate(withDuration: 0.9, delay: 0.2, usingSpringWithDamping: 0.3, initialSpringVelocity: 0.5, options: UIViewAnimationOptions.curveEaseOut, animations: {
+//            
+//            self.userName.center.x += self.view.bounds.width
+//            
+//        }, completion: nil)
+//        
+//        
+//        
+//        UIView.animate(withDuration: 0.9, delay: 0.2, usingSpringWithDamping: 0.3, initialSpringVelocity: 0.5, options: UIViewAnimationOptions.curveEaseOut, animations: {
+//            
+//            self.password.center.x += self.view.bounds.width
+//            
+//        }, completion: nil)
+//        
+//        
+//    }
 
     
     func showAlert() {
