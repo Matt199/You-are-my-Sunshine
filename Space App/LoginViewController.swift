@@ -48,19 +48,6 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
         // hide text fields 
         
-        
-        
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named:"logowanie_72.png")!)
-        
-        UIGraphicsBeginImageContext(self.view.frame.size)
-        UIImage(named: "logowanie_72.png")?.draw(in: self.view.bounds)
-        
-        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
-        
-        UIGraphicsEndImageContext()
-        
-        self.view.backgroundColor = UIColor(patternImage: image)
-        
         //loginStack.center.x -= view.bounds.width
        
         //userName.center.x -= view.bounds.width

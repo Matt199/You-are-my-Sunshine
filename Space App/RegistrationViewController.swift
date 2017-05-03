@@ -196,18 +196,6 @@ class RegistrationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named:"tło_72.png")!)
-        
-        UIGraphicsBeginImageContext(self.view.frame.size)
-        UIImage(named: "tło_72.png")?.draw(in: self.view.bounds)
-        
-        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
-        
-        UIGraphicsEndImageContext()
-        
-        self.view.backgroundColor = UIColor(patternImage: image)
         
         
         

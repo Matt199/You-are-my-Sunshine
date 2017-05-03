@@ -147,16 +147,7 @@ class CalculateViewController: UIViewController, UIPickerViewDelegate, UIPickerV
         self.annualPicker.delegate = self
         self.annualPicker.dataSource = self
         
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named:"tło_72.png")!)
         
-        UIGraphicsBeginImageContext(self.view.frame.size)
-        UIImage(named: "tło_72.png")?.draw(in: self.view.bounds)
-        
-        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
-        
-        UIGraphicsEndImageContext()
-        
-        self.view.backgroundColor = UIColor(patternImage: image)
         
         
         
