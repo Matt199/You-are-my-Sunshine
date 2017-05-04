@@ -7,116 +7,96 @@
 //
 
 import UIKit
-import CoreLocation
 import MapKit
+import Foundation
 
-
-class MapViewController: UIViewController, MKMapViewDelegate {
-    
-    var cl : CLLocationManager?
+class MapViewController: UIViewController {
     
 
     @IBOutlet weak var mapView: MKMapView!
     
+    let regionRadius: CLLocationDistance = 1000
     
-   
     
+    var artworks = [Charger]()
+    
+    var tab = [Double]()
+    var tab2 = [Double]()
+    var dataArray:NSArray = []
+    var dataArray2:NSArray = []
+    var array2d = [[Double]]()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         mapView.delegate = self
-
-        let geoCoder = CLGeocoder()
         
-        geoCoder.geocodeAddressString("524 Ct St, Brooklyn, NY 11231", completionHandler: { placemarks, Error in
+        parseJson()
+        
+        array2d = [tab,tab2]
+        print(array2d)
+        
+        
+        let location = CLLocation(latitude: 21.282778, longitude: -157.829444)
+        
+        centerMapLocation(location: location)
+        
+        for i in 0..<tab.count {
             
-            if Error != nil {
-                print("Error")
-                return
-            }
+            artworks.append(Charger(title: "Charging hub", locationName: "",  coordinate: CLLocationCoordinate2D(latitude: tab[i], longitude: tab2[i] ), image: UIImage(named: "panels.png")!))
             
-            if let placemarks = placemarks {
+        }
+        
+        mapView.addAnnotations(artworks)
+        
+        
+    }
+    
+    
+    func centerMapLocation(location: CLLocation) {
+        
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, regionRadius * 2.0, regionRadius * 2.0)
+        mapView.setRegion(coordinateRegion, animated: true)
+        
+    }
+    
+    func parseJson() {
+        
+        let url = Bundle.main.url(forResource: "AdresData", withExtension: "json")
+        
+        let data = try? Data(contentsOf: url!)
+        
+        let JSON = try! JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as AnyObject
+        
+        //print(JSON)
+        
+        if let hub1 = JSON["coordinates"] as? NSDictionary {
+            
+            
+            if let lon = hub1["lat"], let lang = hub1["long"] {
                 
-                let placemark = placemarks[0]
+                dataArray = lon as! NSArray
+                dataArray2 = lang as! NSArray
                 
-                
-                let annotation = MKPointAnnotation()
-                
-                annotation.title = "Solar hub"
-                
-                if let location = placemark.location {
-                
-                    annotation.coordinate = location.coordinate
+                for i in dataArray {
                     
-                    
-                    self.mapView.showAnnotations([annotation], animated: true)
-                    self.mapView.selectAnnotation(annotation, animated: true)
+                    tab.append(i as! Double)
                     
                 }
                 
+                for i in dataArray2 {
+                    tab2.append(i as! Double)
+                }
                 
                 
-            
             }
             
-            
-            
-        })
-        
-    
-        // Do any additional setup after loading the view.
-    }
-
-    
-    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        
-        
-        let identifier = "MyPin"
-        
-        
-        if annotation.isKind(of: MKUserLocation.self) {
-        
-            return nil
-        
         }
         
         
-        var annotationView:MKPinAnnotationView? = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKPinAnnotationView
-        
-        if annotation != nil {
-        
-            annotationView = MKPinAnnotationView(annotation: annotationView as? MKAnnotation, reuseIdentifier: identifier)
-            annotationView?.canShowCallout = true
-        
-        }
-        
-        let leftIconView = UIImageView(frame: CGRect(x: 0, y: 0, width: 53, height: 53))
-        leftIconView.image = UIImage(named: "panels.png")
-        annotationView?.leftCalloutAccessoryView = leftIconView
-        
-        
-        return annotationView
-
         
     }
-    
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

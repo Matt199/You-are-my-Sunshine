@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E5756A71EBAA2ED0060E9E7 /* mapViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5756A61EBAA2ED0060E9E7 /* mapViewExtension.swift */; };
+		0E5756AE1EBAA3760060E9E7 /* Charger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5756AD1EBAA3760060E9E7 /* Charger.swift */; };
+		0E5756B01EBAA3B60060E9E7 /* AdresData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E5756AF1EBAA3B60060E9E7 /* AdresData.json */; };
 		0E5840F41EB9F14D0066925F /* kbController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5840F31EB9F14D0066925F /* kbController.swift */; };
 		0E8EAF561EB488BE004B37AD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8EAF551EB488BE004B37AD /* LoginViewController.swift */; };
 		0E8EAF581EB49623004B37AD /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8EAF571EB49623004B37AD /* CalculateViewController.swift */; };
@@ -66,6 +69,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0E5756A61EBAA2ED0060E9E7 /* mapViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapViewExtension.swift; sourceTree = "<group>"; };
+		0E5756AD1EBAA3760060E9E7 /* Charger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Charger.swift; sourceTree = "<group>"; };
+		0E5756AF1EBAA3B60060E9E7 /* AdresData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AdresData.json; sourceTree = "<group>"; };
 		0E5840F31EB9F14D0066925F /* kbController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kbController.swift; sourceTree = "<group>"; };
 		0E8EAF551EB488BE004B37AD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0E8EAF571EB49623004B37AD /* CalculateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
@@ -140,12 +146,15 @@
 				0E8EAF5B1EB4FC5A004B37AD /* InfoTabViewCellTableViewCell.swift */,
 				0EB8A2FD1EB580FC0056136E /* LiveDataController.swift */,
 				0EB8A3041EB5B94B0056136E /* RegistrationViewController.swift */,
+				0E5756AD1EBAA3760060E9E7 /* Charger.swift */,
 				0E5840F31EB9F14D0066925F /* kbController.swift */,
+				0E5756A61EBAA2ED0060E9E7 /* mapViewExtension.swift */,
 				C949E8681EB15634001303DA /* Main.storyboard */,
 				C949E86E1EB15635001303DA /* Assets.xcassets */,
 				C949E8701EB15636001303DA /* LaunchScreen.storyboard */,
 				C949E8731EB15636001303DA /* Info.plist */,
 				C949E86B1EB15635001303DA /* Space_App.xcdatamodeld */,
+				0E5756AF1EBAA3B60060E9E7 /* AdresData.json */,
 			);
 			path = "Space App";
 			sourceTree = "<group>";
@@ -251,6 +260,7 @@
 				C949E8721EB15636001303DA /* LaunchScreen.storyboard in Resources */,
 				C949E86F1EB15635001303DA /* Assets.xcassets in Resources */,
 				C949E86A1EB15634001303DA /* Main.storyboard in Resources */,
+				0E5756B01EBAA3B60060E9E7 /* AdresData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +279,8 @@
 				0EB8A3051EB5B94B0056136E /* RegistrationViewController.swift in Sources */,
 				0E5840F41EB9F14D0066925F /* kbController.swift in Sources */,
 				C949E8651EB15633001303DA /* AppDelegate.swift in Sources */,
+				0E5756AE1EBAA3760060E9E7 /* Charger.swift in Sources */,
+				0E5756A71EBAA2ED0060E9E7 /* mapViewExtension.swift in Sources */,
 				0E8EAF561EB488BE004B37AD /* LoginViewController.swift in Sources */,
 				C949E87D1EB16CF7001303DA /* MapViewController.swift in Sources */,
 				0E8EAF5C1EB4FC5A004B37AD /* InfoTabViewCellTableViewCell.swift in Sources */,

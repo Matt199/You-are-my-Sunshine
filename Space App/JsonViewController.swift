@@ -21,6 +21,9 @@ class JsonViewController: UIViewController{
     var temp2 = "ac_monthly"
     var temp3 = "solrad_monthly"
     
+    var calcAverage = 0.0
+    var average = 0.0
+    
     let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
     
 
@@ -32,11 +35,13 @@ class JsonViewController: UIViewController{
     
     @IBAction func dcButton(_ sender: UIButton) {
         
+        
         dataDou = []
         getJsonData(val: temp1)
         barChartView.reloadInputViews()
         
         titleLabel.text = "DC Monthly"
+        
         
     }
     
@@ -50,6 +55,8 @@ class JsonViewController: UIViewController{
         barChartView.reloadInputViews()
 
         titleLabel.text = "AC Monthly"
+        
+        
     }
     
     
@@ -62,39 +69,25 @@ class JsonViewController: UIViewController{
         
         titleLabel.text = "Solrad Monthly"
         
+        
     }
     
     
-    
-    
-    
-  
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-        
-        
-        //getJsonData()
-        
-        //self.setChart(dataPoints: months, values: unitsSold)
-        
-        //getJsonData(val: temp)
-        //print(temp)
-        
-        
-        
-        
-        
-        
+     
+     
         
     }
  
     
     func getJsonData(val: String) {
     
+        
+        average = 0.0
+        calcAverage = 0.0
         
         let url = URL(string: "https://developer.nrel.gov/api/pvwatts/v5.json?api_key=DEMO_KEY&lat=40&lon=-105&system_capacity=4&azimuth=180&tilt=40&array_type=1&module_type=1&losses=10")
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
@@ -116,6 +109,8 @@ class JsonViewController: UIViewController{
                                 
                                 self.dataArray = ac_monthly as! NSArray
                                 for i in self.dataArray {
+                                    
+                                    self.calcAverage += i as! Double
                                 
                                     self.dataDou.append(i as! Double)
                                 
@@ -130,7 +125,6 @@ class JsonViewController: UIViewController{
                             }
                             
                         }
-                        
                         
                         
                         
@@ -169,11 +163,16 @@ class JsonViewController: UIViewController{
             dataEntries.append(dataEntry)
         }
         
-        let chartDataSet = BarChartDataSet(values: dataEntries, label: "Units Sold")
+        average = calcAverage/12
+        
+        let chartDataSet = BarChartDataSet(values: dataEntries, label: "output")
+        let ll = ChartLimitLine(limit: average, label: String(format: "Average = %.2f", average))
+        
         
         let chartData = BarChartData()
         chartData.addDataSet(chartDataSet)
 
+        barChartView.rightAxis.addLimitLine(ll)
         barChartView.animate(xAxisDuration: 2.0, yAxisDuration: 2.0)
         
         barChartView.data = chartData
@@ -184,14 +183,5 @@ class JsonViewController: UIViewController{
         
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
